@@ -1,0 +1,2 @@
+# ASCII-Map-Generator
+Real elevation data for Logan, UT was pulled to generate different elevation maps for the area using Python. Different elevation maps centered on Utah State University's Old Main Building (designated with an "@" symbol) were created. An html file is used to display the map in browser.)
