@@ -1,0 +1,23 @@
+# 1. Python Environment and Cache Files
+# Ignore files and folders created by Python/Conda
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+.ipynb_checkpoints/
+pip-log.txt
+
+# 2. Operating System and IDE Files
+# Ignore files created by the OS (Windows, macOS) or code editors (VS Code)
+.DS_Store
+Thumbs.db
+.vscode/
+*~
+
+# 3. Geospatial / Rasterio Temporary Files
+# When working with large GeoTIFFs, rasterio may create temporary files.
+# It's safest to ignore these temporary lock files.
+*.tif.aux.xml
+*.lock
