@@ -1,0 +1,25 @@
+<!--to run make a terminal by selecting new terminal, run: "python -m http.server 8000" and paste url: "http://localhost:8000/index.html"-->>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ASCII RPG</title>
+        <!--Pyodid Loads here-->
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.24.0/full/pyodide.js"></script>
+        <script>
+        async function main(){
+            // Fetch precomputed ASCII map
+            let response = await fetch("ascii_elevation.txt");
+            let mapStr = await response.text();
+
+            // Display in <pre>
+            document.getElementById("mapDisplay").innerText = mapStr;
+        }
+        main();
+        </script>
+    </head>
+    <body>  
+        <pre id="mapDisplay"></pre>
+        <!--Later: script to run Python and send mapStr to <pre>-->
+    </body>
+</html>
